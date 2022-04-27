@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="index.js">
+    </script>
+</head>
+
+<body style="background-color: #ffd4f1;">
+    <div>
+        Name: Minh Huyen T Nguyen
+        <br>
+        KUID: 3039095
+        
+    </div>
+    <br>
+    <header style="text-align: center;">LAB 09: PHP</header>
+    <br>
+    <div class="tab">
+        <button class="tablinks" onmouseover="openTab(event, 'ex1')" onclick="location.href='ex1.php'">Multiplication Table</button>
+        <button class="tablinks" onmouseover="openTab(event, 'ex2')" onclick="location.href='exercise2.html'">Quiz</button>
+        <button class="tablinks" onmouseover="openTab(event, 'ex3')" onclick="location.href='customerFrontend.html'">Web Store</button>
+        
+    </div>
+    <div class="tabcontent" id="ex1">
+        <h3>Exercise 1</h3>
+        A webpage that allows the user to enter a password two times in order to validate it.</div>
+    <div class="tabcontent" id="ex2">
+        <h3>Exercise 2</h3>
+        A new webpage that has a single img tag and two buttons labeled “previous” and “next”.
+    </div>
+    <div class="tabcontent" id="ex3">
+        <h3>Exercise 3</h3>
+        A profile page that is styled with CSS.
+    </div>
+    
+</body>
+<script>
+    function openTab(evt, name) {
+        var i, info, tablinks;
+        info = document.getElementsByClassName("tabcontent");
+        for (i = 0; i<info.length;i++) {
+            info[i].style.display="none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i<tablinks.length;i++) {
+            tablinks[i].className=tablinks[i].className.replace("active","");
+        }
+        document.getElementById(name).style.display = "block";
+        evt.currentTarget.className += "active";
+    }
+    
+</script>
+</html>

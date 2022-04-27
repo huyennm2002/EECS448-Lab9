@@ -1,0 +1,48 @@
+.container {
+    background-color: #ffffff;
+    color: black;
+    line-height: 24px;
+    margin: 90px 500px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: left;
+    height: 350px;
+}
+.submitbtn {
+    align-content: center;
+}
+
+.submit {
+    background-color: inherit;
+    margin-top: 10px;
+    color: black;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    
+}
+
+.submit:hover {
+    background-color: #fa8816;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+}

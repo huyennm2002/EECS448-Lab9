@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="./style.css"/>
+    <title>Customer</title>
+</head>
+<body style="background-color: #495057;">
+    <form class="container" onsubmit="return formCheck()" action="customerBackend.php" method="POST">
+        <label>
+            Email
+            <input name="email" id="username" type="email" value="" placeholder="name@domain.com">
+        </label>
+        <br>
+        <label>
+            Password
+            <input id="password" name="pw" type="password" value="" placeholder="Enter your password">
+        </label>
+        <br>
+        <p>Shipping option: </p>
+            <input type="radio" id="option1" name="shipping" value="option1">
+            <label for="option1">Free 7 days</label><br>
+            <input type="radio" id="option2" name="shipping" value="option2">
+            <label for="option2">$50.00 overnight</label><br>
+            <input type="radio" id="option3" name="shipping" value="option3">
+            <label for="option3">$5.00 three days</label><br>
+        <br>
+        <label>
+            Gummies
+            <input id="item1" name="item1" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <label>
+            Bread
+            <input id="item2" name="item2" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <label>
+            Snack mix
+            <input id="item3" name="item3" type="text" value="" placeholder="Enter your quantity">
+        </label>
+        <br>
+        <div class = "submitbtn">
+            <button class="submit" type="submit" >Submit</button>
+        <input class="submit" type="reset" value="Reset" onclick="window.location.reload()">
+        </div>
+        
+    </form>
+    <script type="text/javascript" src="./formChecker.js"></script>
+</body>
+</html>
